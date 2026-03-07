@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class=" ">
+    <section class=" md:flex justify-between items-center p-5  shadow-lg sticky">
+        <div class="flex items-center gap-1.5"><img src="./assets/github-logo.png" alt="" class="w-[30px]">
+            <h1 class="font-bold text-2xl ">GitHub Issues Tracker</h1>
+        </div>
+
+        <div class="mt-6 flex justify-center" id="searchBar"><label class="input">
+                <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                        stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </g>
+                </svg>
+                <input type="search" required placeholder="Search issues..." id="input_search" />
+            </label>
+            <button class="text-white p-4 btn bg-blue-950  ml-1.5">+ New Issue</button>
+        </div>
+    </section>
+    <section class=" w-[90%] mx-auto mt-10 all-buttons shadow-sm p-4 space-x-2"><button
+            class="text-white btn bg-blue-950 w-[85px]">All</button><button class="btn w-[85px]">Open</button><button
+            class="btn w-[85px]">Closed</button></section>
+    <section class="w-[90%] mx-auto mt-6 shadow-sm p-4 flex justify-between items-center">
+        <div class="flex gap-1"><img src="./assets/Aperture.png" alt="" srcset="" class="w-[50px] h-[50px]">
+            <div class="flex flex-col gap-1">
+                <p class="font-bold text-xl">50 Issues</p>
+                <p>Track and manage your project issues</p>
+            </div>
+        </div>
+        <div class="flex gap-3">
+            <p><i class="fa-solid fa-circle text-green-500"></i>  Open</p>
+            <p><i class="fa-solid fa-circle text-red-500"></i>  Closed</p>
+        </div>
+    </section>
+    <section><div> </div></section>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Issues Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="w-[50%] mx-auto p-5 md:p-22 bg-white shadow-lg mt-10">
+    <section class="header flex flex-col justify-center items-center gap-3 paragrah-text"><img
+            src="./assets/github-logo.png" alt="">
+        <h1 class="text-3xl font-bold text-center">GitHub Issues Tracker</h1>
+        <p>Sign in to manage your issues</p>
+    </section>
+
+    <section class="flex flex-col justify-center ">
+        <fieldset class="fieldset rounded-box  p-4  ">
+
+
+            <label class="label text-sm  font-medium text-black">Username</label>
+            <input type="text" class="input border-none shadow-2xl" placeholder="Enter Username" id="name-input"/>
+            <p class="text-blue-950 text-xs">Default: admin</p>
+            <label class="label text-sm  font-medium text-black">Password</label>
+            <input type="password" class="input border-none shadow-2xl" placeholder="Password" id="pass-input" />
+            <p class="text-blue-950 text-xs">Default: admin123</p>
+
+            <button class="btn btn-neutral mt-4 bg-blue-950 text-white" id="signin-btn">Sign In</button>
+        </fieldset>
+    </section>
+    <div class="flex items-center my-6">
+        <div class="flex-grow border-t border-gray-300"></div>
+        <span class="mx-4 text-black text-sm">OR</span>
+        <div class="flex-grow border-t border-gray-300"></div>
+    </div>
+     <section class=" flex flex-col justify-center items-center gap-3 paragrah-text"><p class="paragraph-text text-xs mb-4">Demo Credentials:</p>
+        <p class="text-black"><span class="font-bold">Username:</span> admin</p>
+         <p class="text-black"><span class="font-bold">Password:</span> admin123</p>
+        
+    </section>
+
+</body>
+<script src="./script/script.js"></script>
+
+</html>
