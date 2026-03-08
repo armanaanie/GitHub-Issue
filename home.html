@@ -28,7 +28,7 @@
                 </svg>
                 <input type="search" required placeholder="Search issues..." id="input_search" />
             </label>
-            <button class="text-white p-4 btn bg-blue-950  ml-1.5">+ New Issue</button>
+            <button class="text-white p-4 btn bg-blue-950  ml-1.5" id="btn-search">+ New Issue</button>
         </div>
     </section>
 
@@ -41,7 +41,7 @@
         </div>
         <div class="flex gap-3">
             <p><i class="fa-solid fa-circle text-green-500"></i> Open</p>
-            <p><i class="fa-solid fa-circle text-red-500"></i> Closed</p>
+            <p><i class="fa-solid fa-circle text-purple-500"></i> Closed</p>
         </div>
     </section>
     
@@ -51,9 +51,18 @@
             class="text-white btn bg-blue-950 w-[85px]" id="allBtn">All</button></section>
             <section id="loading-spinner" class="text-center mt-6 hidden"><span class="loading loading-dots loading-xl"></span>
     </section>
-    <section class="w-[90%] mx-auto grid grid-cols-4 gap-5 mt-6" id="card-container">
+    <section class="w-[90%] mx-auto grid grid-cols-2 md:grid-cols-4 gap-5 mt-6" id="card-container">
 
     </section>
+    <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="issue_modal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="details-box" class="flex flex-col gap-4"></div>
+    </div>
+    
+  </div>
+</dialog>
 
     <script src="./script/home.js"></script>
 </body>
